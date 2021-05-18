@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A survey form</title>
+    <link rel="stylesheet" href="survey.css">
+</head>
+<body>
+   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  
+   <div class="container">
+   <header class="header">
+
+    <h1 id="title">Covid survey form</h1>
+
+    <p id="description">We are here for you.We are providing 24/7 service.Fill out the form and we will contact you as soon as possible.</p>
+ 
+   </header>
+   
+   <form action="#" id="survey-form">
+
+      <div class="form-group">
+      <label for="name" id="name-label">Name:</label><br>
+      <input type="text" id="name" placeholder="Enter your name" required>
+      </div>
+
+      <div class="form-group">
+          <label for="email" id="email-label">Email:</label><br>
+          <input type="email" id="email" placeholder="Email" required>
+      </div>
+
+      <div class="form-group">
+          <label for="number" id="number-label">Age:</label><br>
+          <input type="number" id="number" placeholder="age" min="18" max="45">
+      </div>
+
+      <div class="form-group">
+          <p class="test">How long you have been suffering from symptoms?</p>
+          <select name="time" id="dropdown" required>
+            <option value="#">select here</option>
+            <option value="oneweek">More than One week</option>
+            <option value="twoweek">More than two week</option>
+          </select>    
+      </div>
+
+      <div class="form-group">
+        <p class="gen">Please Select your Gender</p>
+     
+       <input type="radio" id="male" name="gender" value="male">
+       <label for="male">Male</label><br>
+       <input type="radio" id="female" name="gender" value="female">
+       <label for="female">Female</label><br>
+       <input type="radio" id="other" name="gender" value="other">
+       <label for="other">Other</label>
+
+    </div>
+
+    <div class="form-group">
+        <p class="sym">What kind of symptoms do you have?</p>
+        <input type="checkbox" name="fever" id="fever" value="fev">
+        <label for="fever">fever</label>
+        <input type="checkbox" name="drycough" id="drycough" value="cough">
+        <label for="drycough">dry cough</label>
+        <input type="checkbox" name="tired" id="tired" value="tiredness">
+        <label for="tired">tiredness</label>
+    </div>
+
+    <div class="form-group">
+        <p class="input-text">Anything else?Please leave us the details:</p>
+        <textarea name="details" id="deatails" cols="30" rows="10"></textarea>
+    </div>
+
+   <div class="form-group">
+       <button type="submit" id="submit">Submit</button>
+      
+   </div>
+
+
+   </form>
+
+   </div>
+</body>
+</html>
